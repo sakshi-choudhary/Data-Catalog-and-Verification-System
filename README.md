@@ -6,16 +6,17 @@
  LIVE AT : <a href="http://www.sakshichoudhary.me/Type-Master/">CLICK HERE</a>
 
 
-![](assets/images/preview.png)
+![](preview.png)
 <hr> 
 
- ![](assets/images/preview2.png)
+ ![](preview2.png)
  
 
 ## Instructions to run
 
-- npm install
-- npm start
+`npm install
+ npm start
+`
 
 
 
