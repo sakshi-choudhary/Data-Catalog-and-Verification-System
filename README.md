@@ -1,7 +1,7 @@
 <h2 align="center">Valley - Task</h2>
 	
 	
- ---
+
 
  LIVE AT : <a href="http://www.sakshichoudhary.me/Type-Master/">CLICK HERE</a>
 
@@ -14,9 +14,10 @@
 
 ## Instructions to run
 
-`npm install
- npm start
-`
+```
+npm install
+npm start
+```
 
 
 
