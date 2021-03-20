@@ -1,4 +1,4 @@
-<h2 align="center">Valley - Task</h2>
+<h2 align="center">Valley: Data Catalog and Verification System </h2>
 	
 	
 
