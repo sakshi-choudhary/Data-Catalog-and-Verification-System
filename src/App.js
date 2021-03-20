@@ -90,6 +90,15 @@ function App() {
               })}
             </table>
           </div>
+          <p className="text-center my-10">
+            Made with &hearts; by{" "}
+            <a
+              className="font-bold underline"
+              href="http://www.sakshichoudhary.me/"
+            >
+              Sakshi Choudhary
+            </a>
+          </p>
         </div>
       </div>
     </div>
