@@ -2,8 +2,21 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
 import PieChart from "./Components/PieChart";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
+  const error = () =>
+    toast.error("Oops! There was some error. Come back later", {
+      position: "top-right",
+      autoClose: 4995,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
   const [data, setData] = useState([]);
   const [dep1, setDep1] = useState("");
   const [dep2, setDep2] = useState("");
@@ -25,7 +38,7 @@ function App() {
         setDep5(res.data[4].Percentage);
       })
       .catch((err) => {
-        console.log(err);
+        error();
       });
   }, []);
 
@@ -101,6 +114,17 @@ function App() {
           </p>
         </div>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={4995}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 }
