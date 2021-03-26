@@ -18,11 +18,7 @@ function App() {
     });
 
   const [data, setData] = useState([]);
-  const [dep1, setDep1] = useState("");
-  const [dep2, setDep2] = useState("");
-  const [dep3, setDep3] = useState("");
-  const [dep4, setDep4] = useState("");
-  const [dep5, setDep5] = useState("");
+
   const [pie, setPie] = useState(true);
   const [table, setTable] = useState(false);
 
@@ -31,11 +27,6 @@ function App() {
       .get("https://api.jsonbin.io/b/605c80cc16da904608a11c25")
       .then(async (res) => {
         setData(res.data);
-        setDep1(res.data[0].Percentage);
-        setDep2(res.data[1].Percentage);
-        setDep3(res.data[2].Percentage);
-        setDep4(res.data[3].Percentage);
-        setDep5(res.data[4].Percentage);
       })
       .catch((err) => {
         error();
@@ -77,13 +68,7 @@ function App() {
             </div>
           </div>
           <div className={`${pie ? "block" : "hidden"} mt-5`}>
-            <PieChart
-              dep1={dep1}
-              dep2={dep2}
-              dep3={dep3}
-              dep4={dep4}
-              dep5={dep5}
-            />
+            <PieChart />
           </div>
           <div className={`${table ? "block" : "hidden"} mt-5`}>
             <table class="rounded-t-lg m-5 w-6/7 mx-auto bg-indigo-700 text-gray-200">

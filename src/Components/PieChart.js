@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Chart from "chart.js";
 import axios from "axios";
 
-const PieChart = (props) => {
+const PieChart = () => {
   const [data, setData] = useState("");
   useEffect(() => {
     axios
