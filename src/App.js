@@ -28,7 +28,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("data.json")
+      .get("https://api.jsonbin.io/b/605c80cc16da904608a11c25")
       .then(async (res) => {
         setData(res.data);
         setDep1(res.data[0].Percentage);
