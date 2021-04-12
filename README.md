@@ -3,7 +3,6 @@
 	
 
 
- LIVE AT : <a href="valley.vercel.app/">CLICK HERE</a>
 
 
 ![](preview.png)
